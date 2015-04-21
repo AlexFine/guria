@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload form</title>
+    <link rel="stylesheet" href="http://beam.la/bootstrap.css">
+
+</head>
+<body>
+<div style="padding:30px;">
+	<form action="process.php" method="post" enctype="multipart/form-data">
+		<select id="country" name="country" class="form-control"> 
+			<option value="" disabled selected>Select your Region</option>
+			<option value="Africa">Africa</option>
+			<option value="SouthAmerica">South America</option>
+			<option value="Asia">Asia</option>
+			<option value="Europe">Europe</option>
+			<option value="Australia">Australia</option>
+			<option value="NorthAmerica">North America</option>
+
+			</select><br>
+<select id="school" name="school" class="form-control"> 
+						<option value="" disabled selected>Select your school</option>
+			<option value="">Not Listed</option>
+
+			<option value="Lick-Wilmerding">Lick Wilmerding</option>
+			<option value="The_San_Francisco_Friends_School">The San Francisco Friends School</option>
+			<option value="Renaissance_College_Hong_Kong">Renaissance College Hong Kong</option>
+			<option value="Knightsbridge_Schools_International_Montenegro">Knightsbridge Schools International Montenegro</option>
+			<option value="Luanda_International_School">Luanda International School</option>
+			<option value="University_of_California_Los_Angeles">University of California, Los Angeles</option>
+			<option value="Manhasset_High_School">Manhasset High School</option>
+			<option value="Canadian_Academy">Canadian Academy, Kobe</option>
+			<option value="Sonoma_Academy">Sonoma Academy</option>
+			<option value="Sugar_Bowl_Ski_Academy">Sugar Bowl Ski Academy</option>
+			<option value="University_of_California_Berkeley">University of California Berkeley</option>
+			<option value="The_Castilleja_School">The Castilleja School (California, USA)</option>
+			<option value="American_School_Bucharest">American School Bucharest</option>
+			<option value="The_American_International_School_of_Johannesburg">The American International School of Johannesburg</option>
+			<option value="The_American_International_School_of_Chennai">The American International School of Chennai</option>
+			<option value="The_Atlanta_International_School">The Atlanta International School</option>
+			<option value="Bali_International_School">Bali International School</option>
+			<option value="The_Cate_School">The Cate School</option>
+			<option value="The_Hamlin_School">The Hamlin School</option>
+			<option value="The_Inter_Community_School_of_Zurich">The Inter Community School of Zurich</option>
+			<option value="Knightsbridge_Schools_International">Knightsbridge Schools International</option>
+			<option value="Luanda_International_School">Luanda International School</option>
+			<option value="Renaissance_College">Renaissance College</option>
+			<option value="The_Thatcher_School">The Thatcher School</option>
+			<option value="University_of_Hong_Kong">University of Hong Kong</option>
+			<option value="The_Branson_School">The Branson School (California, USA)</option>
+			<option value="Portinari">Portinari (Brazil)</option>
+			<option value="The_American_School_Bucharest">The American School Bucharest (Romania)</option>
+			<option value="Rowland_Hall">Rowland Hall (Utah, USA)</option>
+<option value="Delhi_Public_School_Kashi">Delhi Public School Kashi (Varanasi, India)</option>
+			<option value="The_Angeli_School">The Angeli School (Varanasi, India)
+</option>
+			<option value="Gorakha_Bhootpurva_Sainik_School">Gorakha Bhootpurva Sainik School (Maharajganj, India)</option>
+			<option value="Swami_Vivekanand_Junior_School">Swami Vivekanand Uchtar Madhyamik Vidyalaya (Maharajganj, India)</option>
+			<option value="Rajkiy_Kannya_Inter_College">Rajkiy Kannya Inter College (Maharajganj, India) </option>
+			<option value="Vishwambhertnath_Janta_Inter_College">Vishwambhertnath Janta Inter College (Maharajganj, India)</option>
+			<option value="Munder_Prasad_Inter_College">Munder Prasad Inter College (Maharajganj, India) </option>
+			<option value="Saraswati_Shishu_Purva_Madhyamik_Vidyalaya"> Saraswati Shishu Purva Madhyamik Vidyalaya (Siddharthnagar, India)
+</option>
+			<option value="Nautanwa_Inter_College"> Nautanwa Inter College (Maharajganj, India)
+</option>
+			<option value="Saraswati_Shishu_Mandir">Saraswati Shishu Mandir Inter College (Maharajganj, India)
+ </option>
+			<option value="New_Modern_Public_School">New Modern Public High School (Maharajganj, India)
+ </option>
+			
+			<option value="G.M.C._Public_School">G.M.C. Public School (Siddharthnagar, India)
+ </option>
+			<option value="B.V.J._Public_School"> Bhartiya Vikas Janjati Vidyalaya (Maharajganj, India)
+</option>
+			<option value="Shreemati_Usha_Devi_Kanya_High_School">Shrimati Usha Devi Kanya Vidyalaya (Maharajganj, India)</option>
+			<option value="My_City_School">My City School (California, United States)</option>
+
+<option value="Kasturba_Gandhi_Balika_Vidyalaya">Kasturba Gandhi Balika Vidyalaya (Maharajganj, India)</option>
+		<option value="The_Head-Royce_School">The Head-Royce School (California, USA)</option>
+<option value="Guria_Education_Center">Guria Education Center, Varanasi, Red Light Area (Varanasi, India)</option>
+<option value="Guria_Education_Center_Mau_Red_Light_Area">Guria Education Center, Mau Red Light Area (Mau, India)</option>
+<option value="Guria_Boat_School">Guria Boat School (Varanasi, India)</option>
+			</select><br>
+   <input name="field1" type="text" id="personname" placeholder="school not listed? Enter your name" class="form-control" style="width:300px; border-radius:2px; text-decoration:none;" />
+<br>
+
+ 		<input type="file" name="fileToUpload" id="fileToUpload"><br>
+
+		
+<div style="height:15px;"></div>
+		 <button type="submit" value="Upload" name="submit"  class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Upload</button>
+	</form><br>
+<p class="lead">Uploading tips:</p>
+<p class="lead"><b>1. </b>Name your file while it's on your computer. That is the name it will have on the art exchange.</p>
+<p class="lead"><b>2. </b>Make sure your image is smaller than 1224x1224 px.</p>
+<p class="lead"><b>3. </b>Make sure your image is a JPG, JPEG, PNG or GIF.</p>
+<p class="lead"><b>4. </b>Think about your art before you post it. You can't take it down, so don't upload test images.</p>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59753654-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
